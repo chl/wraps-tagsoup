@@ -1,0 +1,6 @@
+{
+    "author": "Christian Langreiter (http://www.langreiter.com/) <chris@langreiter.com>",
+    "lib": "modules",
+    "jars": "lib/tagsoup-1.2.jar",
+    "version": "0.1.0"
+}
