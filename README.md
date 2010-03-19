@@ -7,4 +7,4 @@ It exports a single function, `parse`, which accepts either a URL or an HTML doc
     var tagsoup = require("wraps/tagsoup");
     var page = tagsoup.parse("http://news.ycombinator.com/");
     default xml namespace = page.namespace();
-    [a.@href for each (a in page..a) if (String(a.text()).match(/\d+ comments?/)]
+    [a.@href for each (a in page..a) if (String(a.text()).match(/\d+ comments?/))]
