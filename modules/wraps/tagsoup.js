@@ -2,8 +2,6 @@ import("ringo/httpclient");
 
 export("parse");
 
-addToClasspath(getResource("./tagsoup/tagsoup-1.2.jar").path);
-
 var transform = javax.xml.transform;
 var sax = org.xml.sax;
 var tagsoup = org.ccil.cowan.tagsoup;
@@ -16,7 +14,7 @@ function ensureHTML(htmlOrURL) {
 }
 
 function toXMLString(domNode) {
-    var out = java.io.StringWriter();
+    var out = new java.io.StringWriter();
     transform.TransformerFactory.newInstance().newTransformer().transform(
         new transform.dom.DOMSource(domNode), new transform.stream.StreamResult(out));
     return new String(out);
