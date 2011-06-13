@@ -8,14 +8,6 @@
         "web": "http://www.langreiter.com",
         "email": "chris@langreiter.com"
     }],
-    "contributors": [{
-        "name": "Christian Langreiter",
-        "web": "http://www.langreiter.com",
-        "email": "chris@langreiter.com"
-    }],
-    "bugs": {
-        "web": "http://github.com/chl/wraps-tagsoup/issues"
-    },
     "licenses": [{
         "type": "Apache License, Version 2.0",
         "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -23,11 +15,5 @@
     "repositories": [{
         "type": "git",
         "url": "http://github.com/chl/wraps-tagsoup.git"
-    }],
-    "dependencies": {},
-    "engines": ["rhino"],
-    "directories": {
-        "lib": "lib",
-        "jars": "jars"
-    }
+    }]
 }

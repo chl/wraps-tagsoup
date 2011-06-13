@@ -2,6 +2,8 @@ var httpclient = require("ringo/httpclient");
 
 export("parse");
 
+addToClasspath("./tagsoup-1.2.jar");
+
 var transform = javax.xml.transform;
 var sax = org.xml.sax;
 var tagsoup = org.ccil.cowan.tagsoup;

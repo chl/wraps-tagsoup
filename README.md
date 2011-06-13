@@ -4,8 +4,7 @@ A simple [TagSoup](http://home.ccil.org/~cowan/XML/tagsoup/) wrapper for [RingoJ
 
 It exports a single function, `parse`, which accepts either a URL or an HTML document as string and returns an [E4X](http://rephrase.net/days/07/06/e4x) XML object.
 
-    var tagsoup = require("wraps/tagsoup");
-    var page = tagsoup.parse("http://news.ycombinator.com/");
+    var page = require("wraps-tagsoup").parse("http://news.ycombinator.com/");
     default xml namespace = page.namespace();
     [a.@href for each (a in page..a) if (String(a.text()).match(/\d+ comments?/))]
 
